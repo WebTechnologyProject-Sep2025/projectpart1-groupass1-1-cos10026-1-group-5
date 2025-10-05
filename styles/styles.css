@@ -1,0 +1,89 @@
+/* 
+Author: Group 5
+Purpose: Styles for the TechInnovate website, orange-themed redesign.
+Only color values have been changed to match the orange palette.
+*/
+
+/* Element selectors */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf6;
+    color: #2b2b2b;
+}
+
+/* Grouping selectors */
+h1, h2, p {
+    margin: 10px 50px;
+    color: #2b2b2b;
+}
+
+/* Contextual selectors */
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #e65c00; 
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: #cc5200; 
+}
+
+/* Pseudo-element selector */
+p::first-letter {
+    font-size: 1.2em;
+}
+
+/* Menu styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffb84d; 
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e65c00; 
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: small;
+    padding: 10px 0;
+    background-color: #ffb84d; 
+    color: #2b2b2b;
+}
+
+footer a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e65c00;
+    text-decoration: underline;
+}
+/* Hyperlinks styles */
+a {
+    color: #e65c00;
+}

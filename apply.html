@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job application page for TechInnovate IT company. Apply for advertised positions.">
+    <meta name="keywords" content="job application, IT jobs, TechInnovate">
+    <meta name="author" content="Nguyen Dac Nhat Quang - Group 5">
+    <title>Apply for a Position - TechInnovate <!-- Company name example; still waiting for information from index.html --></title>
+    <link rel="stylesheet" href="styles/styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Job Application <!-- Company name example; still waiting for information from index.html --></h1>
+        <!-- Navigation menu consistent across pages -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Positions</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mailto:info@techinnovate.com.au">Contact Us <!-- Email format as required; company name example, still waiting for information from index.html --></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Apply for a Position</h2>
+            <p>Fill out the form below to apply for one of our advertised positions.</p>
+            
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                <!-- Job reference number -->
+                <label for="jobref">Job Reference Number:</label>
+                <select id="jobref" name="jobref" required>
+                    <option value=""disabled selected hidden>Select a job</option>
+                    <!-- Example options; still waiting for information from jobs.html -->
+                    <option value="ABC12">ABC12 - Example Job 1 </option>
+                    <option value="DEF34">DEF34 - Example Job 2 </option>
+                </select>
+
+                <!-- First name -->
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" maxlength="20" pattern="[A-Za-z]+" required title="Maximum 20 alphabetic characters only">
+
+                <!-- Last name -->
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" maxlength="20" pattern="[A-Za-z]+" required title="Maximum 20 alphabetic characters only">
+
+                <!-- Date of birth -->
+                <label for="dob">Date of Birth (dd/mm/yyyy):</label>
+                <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" required title="Format: dd/mm/yyyy">
+
+                <!-- Gender -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <!-- Street Address -->
+                <label for="street">Street Address:</label>
+                <input type="text" id="street" name="street" maxlength="40" required title="Maximum 40 characters">
+
+                <!-- Suburb/town -->
+                <label for="suburb">Suburb/Town:</label>
+                <input type="text" id="suburb" name="suburb" maxlength="40" required title="Maximum 40 characters">
+
+                <!-- State -->
+                <label for="state">State:</label>
+                <select id="state" name="state" required>
+                    <option value=""disabled selected hidden>Select state</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+
+                <!-- Postcode -->
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" pattern="\d{4}" minlength="4" maxlength="4" required placeholder="Please provide the postcode of your State">
+                <!-- Email address -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required title="Valid email format">
+
+                <!-- Phone number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[\d ]{8,12}" required title="8 to 12 digits or spaces">
+
+                <!-- Required technical list -->
+                <fieldset>
+                    <legend>Required Technical Skills:</legend>
+                    <!-- Example checkboxes; still waiting for information from jobs.html (essential skills from job descriptions) -->
+                    <input type="checkbox" id="skill1" name="skills[]" value="Java">
+                    <label for="skill1">Java Programming</label>
+                    <input type="checkbox" id="skill2" name="skills[]" value="SQL">
+                    <label for="skill2">SQL Database Management</label>
+                    <input type="checkbox" id="skill3" name="skills[]" value="HTML/CSS">
+                    <label for="skill3">HTML/CSS</label>
+                </fieldset>
+
+                <!-- Other skills -->
+                <label for="otherskills">Other Skills:</label>
+                <textarea id="otherskills" name="otherskills" rows="4" cols="50"></textarea>
+
+                <!-- Submit button -->
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer with Jira link -->
+        <p>&copy; 2025 TechInnovate <!-- Company name example; still waiting for information from index.html --></p>
+        <a href="https://example.atlassian.net/jira">Jira Project</a> 
+    </footer>
+</body>
+</html>
