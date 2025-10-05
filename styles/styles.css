@@ -87,3 +87,19 @@ footer a:hover {
 a {
     color: #e65c00;
 }
+
+
+.group-photo {
+    float: right;               
+    width: 30%;                 
+    margin: 0 0 1em 1em;        
+    padding: 5px;               
+    border: 2px solid #e65c00;  
+}
+
+
+.group-photo img {
+    width: 100%;                
+    height: auto;               
+    display: block;             
+}
