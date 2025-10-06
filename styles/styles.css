@@ -183,3 +183,66 @@ main > section {
     font-style: italic;
     color: #555;
 }
+
+
+
+/* 
+==============================================
+Styles for Positions Page (jobs.html)
+==============================================
+*/
+
+.job-listings {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.job-card { 
+    padding: 30px;
+    align-items: center;
+    background: #ffae00;
+    border: 1px solid #ffc444;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between cards */
+    overflow: hidden; /* Ensures the border-radius is respected by child elements */
+}
+
+/* Styling for the clickable card */
+.job-card summary {
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer; /* Changes the mouse cursor to a pointer to indicate it's clickable */
+    outline: none; /* Removes the default focus outline (ie. blue)*/
+}
+
+.job-card img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.job-card h3, .job-card p, .job-card h4 {
+    margin: 0; /* Removes default margins from headings and paragraphs inside the summary */
+}
+
+.job-card p {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Styling for the expanded details section */
+.job-details {
+    border: 1px solid #ff8800;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffdd00;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+.job-details ul, .job-details li {
+    padding: 10px;
+}
