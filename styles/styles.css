@@ -1,10 +1,9 @@
 /* 
 Author: Group 5
 Purpose: Styles for the TechInnovate website, orange-themed redesign.
-Only color values have been changed to match the orange palette.
 */
 
-/* Element selectors */
+/* --- Global Styles --- */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,23 +13,33 @@ body {
     color: #2b2b2b;
 }
 
-/* Grouping selectors */
 h1, h2, p {
     margin: 10px 50px;
     color: #2b2b2b;
 }
 
-/* Pseudo-class selector */
+/* Contextual selectors */
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #e65c00; 
+}
+
 a:hover {
     color: #cc5200; 
 }
 
-/* Pseudo-element selector */
 p::first-letter {
     font-size: 1.2em;
 }
 
-/* Menu styles */
+/* --- Header & Navigation --- */
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #e65c00; 
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -88,7 +97,7 @@ nav a:hover {
     color: #ffffff;
 }
 
-/* Footer */
+/* --- Footer --- */
 footer {
     width: 100%;
     text-align: center;
@@ -96,6 +105,7 @@ footer {
     padding: 10px 0;
     background-color: #ffb84d; 
     color: #2b2b2b;
+    clear: both; /* Ensures footer is always below floated content */
 }
 
 footer a {
@@ -107,7 +117,69 @@ footer a:hover {
     color: #e65c00;
     text-decoration: underline;
 }
-/* Hyperlinks styles */
-a {
-    color: #e65c00;
+
+/* 
+==============================================
+Styles for About Us Page (about.html)
+==============================================
+*/
+
+/* Fixes content wrapping issue by overriding global margins inside the main tag */
+main > section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.group-photo {
+    float: right;               
+    width: 30%;   
+    max-width: 400px;              
+    margin: 0 0 1em 1.5em;        
+    padding: 5px;               
+    border: 2px solid #e65c00;  
+}
+
+.group-photo img {
+    width: 100%;                
+    height: auto;               
+    display: block;             
+}
+
+#student-ids-container {
+    text-align: right;
+    margin-right: 0; 
+}
+
+#student-ids-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests-table {
+    width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse;
+}
+
+.interests-table th, .interests-table td {
+    border: 1px solid #ffb84d;
+    padding: 12px;
+    text-align: left;
+}
+
+.interests-table th {
+    background-color: #ffb84d;
+    color: #2b2b2b;
+    font-weight: bold;
+}
+
+.interests-table tbody tr:hover {
+    background-color: #fffaf6;
+}
+
+.interests-table caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-style: italic;
+    color: #555;
 }
