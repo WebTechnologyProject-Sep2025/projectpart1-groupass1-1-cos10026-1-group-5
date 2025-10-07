@@ -211,6 +211,7 @@ Styles for Positions Page (jobs.html)
 
 /* Styling for the clickable card */
 .job-card summary {
+    color: #974900;
     margin-bottom: 20px;
     font-weight: bold;
     cursor: pointer; /* Changes the mouse cursor to a pointer to indicate it's clickable */
@@ -221,7 +222,6 @@ Styles for Positions Page (jobs.html)
     max-width: 100%;
     height: auto;
 }
-
 
 
 .job-card h3, .job-card p, .job-card strong {
