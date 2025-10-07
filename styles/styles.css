@@ -193,15 +193,16 @@ Styles for Positions Page (jobs.html)
 */
 
 .job-listings {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
+    font: 18px 'Calibri';
 }
 
 .job-card { 
     padding: 30px;
     align-items: center;
-    background: #ffae00;
-    border: 1px solid #ffc444;
+    background: #ff991b;
+    border: 1px solid #ffc400;
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 20px; /* Space between cards */
     overflow: hidden; /* Ensures the border-radius is respected by child elements */
@@ -216,8 +217,6 @@ Styles for Positions Page (jobs.html)
 }
 
 .job-card img {
-    display: flex;
-    justify-content: center;
     max-width: 100%;
     height: auto;
 }
@@ -235,9 +234,9 @@ Styles for Positions Page (jobs.html)
 
 /* Styling for the expanded details section */
 .job-details {
-    border: 1px solid #ff8800;
+    border: 1px solid #ff9d00;
     border-radius: 8px; /* Rounded corners */
-    background-color: #ffdd00;
+    background-color: #ffcf33;
     overflow: hidden;
     text-align: left;
 }
