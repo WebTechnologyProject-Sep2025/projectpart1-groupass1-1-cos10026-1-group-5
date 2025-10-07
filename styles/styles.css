@@ -47,7 +47,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #ffb84d; 
-    
+
 }
 
 header {
@@ -260,6 +260,7 @@ form {
     padding: 20px;
     border: 1px solid #f5c29f;
     background-color: #fff8f2;
+    border-radius: 10px;
 }
 
 form label {
