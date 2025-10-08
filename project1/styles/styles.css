@@ -200,6 +200,7 @@ Styles for Positions Page (jobs.html)
 }
 
 .job-card { 
+    
     padding: 30px;
     align-items: center;
     background: #ffa600;
@@ -219,12 +220,13 @@ Styles for Positions Page (jobs.html)
 }
 
 .job-card img {
+    
     max-width: 100%;
     height: auto;
 }
 
 
-.job-card h3, .job-card p, .job-card strong {
+.job-card h3, .job-card p, .job-card strong, .job-card li {
     margin: 0; /* Removes default margins from headings and paragraphs inside the summary */
     color: #6b3000;
 }
@@ -235,10 +237,6 @@ Styles for Positions Page (jobs.html)
     color: #9f2500;
 }
 
-.job-card p {
-    font-weight: normal;
-    margin-top: 5px;
-}
 
 /* Styling for the expanded details section */
 .job-details {
