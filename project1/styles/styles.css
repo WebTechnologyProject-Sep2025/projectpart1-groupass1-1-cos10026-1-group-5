@@ -393,44 +393,48 @@ input[type="radio"] {
 accent-color: orange;
 }
 
-.intro-section {
-    position: relative; 
-    max-width: 100%; 
-    max-height: 100%;
-    margin: auto; 
-    overflow: hidden; 
-}
-
 .section-image {
     width: 100%; 
     height: 100%; 
     display: flex;
 }
 
+.intro-section {
+    position: relative; 
+    max-width: 100; 
+    max-height: 100%;
+    margin: auto; 
+    overflow: hidden; 
+}
+
 .text-box {
     position: absolute;
-    top: 2.2%; 
-    left:25%;
-    width: 50%;
-    background-color:  rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
+    top: 1%; 
+    left: 50%;
+    transform: translateX(-50%); /* Centers the box */
+    width: clamp(300px, 50%, 800px); /* Responsive width with minimum and maximum bounds */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: clamp(10px, 2vw, 20px); /* Responsive padding */
+    border-radius: clamp(4px, 0.5vw, 8px); /* Responsive border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .text-box h2 {
-    font-size: 2em;
+    font-size: clamp(1.2rem, 3vw, 2rem); /* Responsive font size */
     font-family: "Open Sans", sans-serif;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: clamp(10px, 2vw, 20px); /* Responsive margin */
+    line-height: 1.2;
 }
 
 .text-box p {
-    font-size: 1.1em;
-    font-family: "Open Sans", sans-serif;;
+    font-size: clamp(0.7rem, 1.5vw, 1.1rem); /* Responsive font size */
+    font-family: "Open Sans", sans-serif;
     color: #333333;
-    margin: 10px;
+    margin: clamp(5px, 1vw, 10px); /* Responsive margin */
+    line-height: 1.4;
 }
 
 .form-wrapper {
@@ -442,17 +446,17 @@ accent-color: orange;
 }
 
 .cta-button {
-    display: block;
-    text-align: center;
+    display: inline-block;
+    justify-content: center;
     left:25%;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 1vw;
     background-color: #e65c00;
     color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: clamp(0.66rem, 1vw, 2rem);
     text-decoration: none;
 }
 
