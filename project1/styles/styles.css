@@ -57,7 +57,7 @@ nav ul {
 }
 
 header {
-    background-image: url(/styles/images/mw-rdFaDc-NsQU-unsplash.jpg); 
+    background-image: url(images/mw-rdFaDc-NsQU-unsplash.jpg); 
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -199,17 +199,22 @@ Styles for Positions Page (jobs.html)
 */
 
 .job-listings {
-    max-width: 900px;
-    margin: 0 auto;
+    float: left;
+    width: calc(70% - 60px);
     font: 18px 'Calibri';
-    
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.job-listings h2 {
+    color: #722a00;
+    font-size: 32px;
 }
 
 .job-card { 
     padding: 30px;
-    align-items: center;
     background: #ffa600;
-    border: 1px solid #ffa200;
+    border: 1px solid #ffba3a; 
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 20px; /* Space between cards */
     overflow: hidden; /* Ensures the border-radius is respected by child elements */
@@ -217,57 +222,98 @@ Styles for Positions Page (jobs.html)
 
 /* Styling for the clickable card */
 .job-card summary {
-    color: #974900;
+    color: #715e00;
     margin-bottom: 20px;
     font-weight: bold;
     cursor: pointer; /* Changes the mouse cursor to a pointer to indicate it's clickable */
     outline: none; /* Removes the default focus outline (ie. blue)*/
 }
 
+/*To ensure that the image always fill the container*/
 .job-card img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-.job-card h3, .job-card p, .job-card strong {
-    margin: 0; /* Removes default margins from headings and paragraphs inside the summary */
-    color: #6b3000;
+.job-card strong, .job-card h3{
+    margin: 0;
+    font-size: 22px;
+    color: #6c0000;
 }
 
 .job-card h4{
     margin: 0;
     font-size: 24px;
-    color: #9f2500;
+    color: #bb2c00;
 }
 
-.job-card p {
-    font-weight: normal;
-    margin-top: 5px;
-}
 
 /* Styling for the expanded details section */
 .job-details {
-    border: 1px solid #ff9d00;
     border-radius: 8px; /* Rounded corners */
-    background-color: #ffc53e;
+    background-color: #ffcd4d;
+    border: 1px solid #ff9900;
     overflow: hidden;
     text-align: left;
-}
-
-.job-details-sections {
-    border: 1px solid #130c00;
-    border-radius: 8px; /* Rounded corners */
-    background-color: #ffda82;
-    overflow: hidden;
-    margin-bottom: 2px;
-    margin-right: 10px;
     padding: 20px;
 }
 
-.job-details ul, .job-details li {
-    padding: 10px;
+.job-details-sections {
+    border: 2px solid #000000;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffeaa5;
+    overflow: hidden;
+    margin-bottom: 2px;
+    padding: 20px;
+    
 }
+
+.job-details ul, .job-details li, .job-details p {
+    padding: 5px;
+    color: #4d0000;
+}
+
+/*Styling for the aside content*/
+
+.job-aside {
+    float: right;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+    background-color: #ffeaa5;
+    padding: 20px;
+    margin: 0 0 0 20px;
+    border-left: 5px solid #e65c00;
+}
+
+.job-aside h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #e65c00;
+}
+
+.job-aside p {
+    color: #4d0000;
+    font: 18px 'Calibri';
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #e65c00;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #cc5200;
+    color: #ffffff;
+}
+
 /* 
 ==============================================
 Styles for Jobs Application Page (apply.html)
